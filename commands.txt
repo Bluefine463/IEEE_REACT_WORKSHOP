@@ -1,0 +1,39 @@
+//for client
+
+npm create vite@latest client
+>react
+>javascript
+
+cd client
+npm install
+
+npm run dev // to run the client
+
+
+
+//for server
+
+mkdir server
+cd server
+npm init -y    //to mention that we are going to use every file inside this directory in node environment
+npm install express pg morgan body-parser cors dotenv 
+
+/* 
+
+express - for communicating with server
+pg	- PostgreSQL driver
+morgan	- request log 
+body-parser	- to get to read the request content
+cors	- to make it listen the request  from a particular port kinda thingy
+        - to transfer data between two different port(client , server)
+dotenv	- for storing credentials (environment variables)
+
+
+*/
+
+create a index.js in server
+
+    set the database server inside the index.js file
+
+node .\index.js // to run the server
+    
